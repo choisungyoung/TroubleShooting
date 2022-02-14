@@ -1,5 +1,5 @@
-## 에러
-# 프라이빗 도커 레지스트리에 이미지 푸쉬시 아래 애러 발생
+# 에러
+## 프라이빗 도커 레지스트리에 이미지 푸쉬시 아래 애러 발생
 ```
 The push refers to repository [localhost:30500/jenkins-withdocker]
 71d9689efc6e: Retrying in 1 second 
@@ -34,8 +34,8 @@ received unexpected HTTP status: 500 Internal Server Error
 ```
 
 
-## 해결
-# 도커 이미지 레지스트리 컨테이너 로그 확인
+# 해결
+## 도커 이미지 레지스트리 컨테이너 로그 확인
 
 time="2022-02-14T06:45:46.211148795Z" level=error msg="response completed with error" err.code=unknown err.detail="`filesystem: mkdir /var/lib/registry/docker: permission denied`" err.message="unknown error" go.version=go1.11.2 http.request.host="localhost:30500" http.request.id=8c04e879-564b-4d56-b233-46e194625aad http.request.method=POST http.request.remoteaddr="10.44.0.0:46599" http.request.uri="/v2/jenkins-withdocker/blobs/uploads/" http.request.useragent="docker/20.10.12 go/go1.16.12 git-commit/459d0df kernel/5.13.0-28-generic os/linux arch/amd64 UpstreamClient(Docker-Client/20.10.12 \(linux\))" http.response.contenttype="application/json; charset=utf-8" http.response.duration=11.684664ms http.response.status=500 http.response.written=164 vars.name=jenkins-withdocker
 
